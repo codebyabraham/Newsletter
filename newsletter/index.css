@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  background-color: hsl(191, 80%, 88%);
+  font-family: 'Roboto';
+  position: relative;
+  top: 50px;
+}
+
+.container {
+  max-width: 350px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.image {
+  flex: 1;
+  text-align: center;
+  font-size: xx-small;
+}
+
+h1 {
+  font-size: 22px;
+  font-family: 'Roboto';
+  color: #333;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+p {
+  color: hsl(235, 18%, 26%);
+  font-size: 12px;
+  font-family: 'Roboto';
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 15px;
+}
+
+li {
+  margin-bottom: 10px;
+  font-size: 10px;
+  font-family: 'Roboto';
+}
+
+li img {
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+}
+
+input[type="text"] {
+  width: 85%;
+  height: 20px;
+  padding: 8px;
+  margin-bottom: 10px;
+  position: relative;
+  bottom: 20px;
+}
+h6{
+  font-family: 'Roboto';
+  font-size: x-small;
+}
+
+button[type="submit"] {
+  padding: 10px 20px;
+  background-color: hsl(234, 29%, 20%);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  height: 40px;
+  font-size: xx-small;
+  position: relative;
+  bottom: 20px;
+}
+
+.image img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.error {
+  color: red;
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+    border-radius: 0;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .text, .image {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  input[type="text"],
+  button[type="submit"] {
+    width: 100%;
+    bottom: 0;
+  }
+
+  button[type="submit"] {
+    margin-top: 10px;
+  }
+}
